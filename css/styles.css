@@ -342,11 +342,12 @@ nav .fa{
     margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
-    padding-left: 10%;
+    padding-left: 1%;
     text-align: right;
 }  
-.product-list-card{
-    padding: 3% 2%;
+#product-list-card{
+    display: flex;
+    flex-wrap: wrap;
     
 }
 

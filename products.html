@@ -36,48 +36,9 @@
 
     <section id="product-list">
 
-        <div class="row">
-            <div class="product-list-card" style="width: 20rem;">
-                <img class="product_img" src="./images1/DCIM 10- BOPF Ex sp 10.jpg">
-
-            </div>
-
-            <div class="product-list-card" style="width: 20rem;">
-                <img class="product_img" src="./images1/DCIM 10- BOPF Ex sp 10.jpg">
-                
-            </div>
-
-            <div class="product-list-card" style="width: 20rem;">
-                <img class="product_img" src="./images1/DCIM 10- BOPF Ex sp 10.jpg">
-
-            </div>
-
-            <div class="product-list-card" style="width: 20rem;">
-                <img class="product_img" src="./images1/DCIM 10- BOPF Ex sp 10.jpg">
-
-            </div>
-
-            <div class="product-list-card" style="width: 20rem;">
-                <img class="product_img" src="./images1/DCIM 10- BOPF Ex sp 10.jpg">
-
-            </div>
-
-            <div class="product-list-card" style="width: 20rem;">
-                <img class="product_img" src="./images1/DCIM 10- BOPF Ex sp 10.jpg">
-
-            </div>
-
-            <div class="product-list-card" style="width: 20rem;">
-                <img class="product_img" src="./images1/DCIM 10- BOPF Ex sp 10.jpg">
-
-            </div>
-
-            <div class="product-list-card" style="width: 20rem;">
-                <img class="product_img" src="./images1/DCIM 10- BOPF Ex sp 10.jpg">
-
-            </div>
-
+        <div id="product-list-card">
         </div>
+        
     </section>
 
     <footer>
@@ -124,5 +85,13 @@
         <p class="copyright">© Copyright 2021 Uruwala Group </p>
     </div>
 </body>
+
+<script>
+    const products = [{image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'},{image: './images1/DCIM 10- BOPF Ex sp 10.jpg'},{image: './images1/DCIM 10- BOPF Ex sp 10.jpg'},]
+    for (const product of products){
+        document.getElementById("product-list-card").innerHTML += '<img src ="' + product.image + '" style="width: 15%; padding: 3% 2%; flex: 1 0 21%; margin: 5px;">';
+	}
+    console.log(products);
+</script>
 
 </html>
