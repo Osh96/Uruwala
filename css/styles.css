@@ -345,9 +345,9 @@ nav .fa{
     padding-left: 10%;
     text-align: right;
 }  
-.product-list-card{
-    padding: 3% 2%;
-    
+#product-list-card{
+    display: flex;
+  flex-wrap: wrap;
 }
 
 /*contact us section */
