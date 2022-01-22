@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href="index.html"><img src = "images1/logo.png"></a>
+            <div class="nav-links" id= "navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href= "./story.html">OUR STORY</a></li>
+                    <li><a href= "./team.html">OUR TEAM</a></li>
+                    <li><a href= "./process.html">PROCESS</a></li>
+                    <li><a href="./products.html">PRODUCTS</a></li>
+                    <li><a href="./contactus.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <img class="background_img" src="./images1/factory.jpg" style="width:100%">
+        <img class="background_img" src="./images1/homepage1.jpg" style="width:100%">
+        <img class="background_img" src="./images1/background3.jpg" style="width:100%">
+    <div class="text-box_process">
+        <p>Process</p>
+    </div>
+ </section>
+
+ <div class = "process">
+     <img class = "process1" src = "./images1/kasun-peiris-Kb0T-uRUBK8-unsplash.jpg">
+     <br><br>
+     <p class = "description">Rain, rain, go away
+        Come again another day
+        Daddy wants to play
+        Rain, rain go away
+        Rain, rain, go away
+        Come again another day
+        Mommy wants to play
+        Rain, rain, go away
+        Rain, rain, go away
+        Come again another day
+        Brother wants to play
+        Rain, rain, go away
+        Rain, rain, go away
+        Come again another day
+        Sister wants to play
+        Rain, rain, go away
+        Rain, Rain, go away
+        Come again another day
+        All the family wants to play
+        Rain, rain, go away I found a love for me
+        Oh darling, just dive right in and follow my lead
+        Well, I found a girl, beautiful and sweet
+        Oh, I never knew you were the someone waiting for me
+        'Cause we were just kids when we fell in love
+        Not knowing what it was
+        I will not give you up this time
+        But darling, just kiss me slow, your heart is all I own
+        And in your eyes, you're holding mine
+        Baby, I'm dancing in the dark with you between my arms
+        Barefoot on the grass, listening to our favourite song
+        When you said you looked a mess, I whispered underneath my breath
+        But you heard it, darling, you look perfect tonight<br> Baby, I'm dancing in the dark with you between my arms
+        Barefoot on the grass, listening to our favourite song
+        When you said you looked a mess, I whispered underneath my breath
+        But you heard it, darling, you look perfect tonight
+        Well I found a woman, stronger than anyone I know
+        She shares my dreams, I hope that someday I'll share her home
+        I found a love, to carry more than just my secrets
+        To carry love, to carry children of our own
+        We are still kids, but we're so in love
+        Fighting against all odds
+        I know we'll be alright this time
+        Darling, just hold my hand
+        Be my girl, I'll be your man
+        I see my future in your eyes</p>
+
+    <div class = "process2description">
+        <br><br>
+    <img class = "process2" src = "./images1/factory.jpg">
+     <p class = "description">Rain, rain, go away
+        Come again another day
+        Daddy wants to play
+        Rain, rain go away
+        Rain, rain, go away
+        Come again another day
+        Mommy wants to play
+        Rain, rain, go away
+        Rain, rain, go away
+        Come again another day
+        Brother wants to play
+        Rain, rain, go away
+        Rain, rain, go away
+        Come again another day
+        Sister wants to play
+        Rain, rain, go away
+        Rain, Rain, go away
+        Come again another day
+        All the family wants to play
+        Rain, rain, go away</p>
+    </div>
+
+    <div class = "process3description">
+        <br><br>
+        <img src = "./images1/pexels-skitterphoto-32266.jpg">
+        <p class = "description">Rain, rain, go away
+        Come again another day
+        Daddy wants to play
+        Rain, rain go away
+        Rain, rain, go away
+        Come again another day
+        Mommy wants to play</p>
+    </div>
+ </div>
+ 
+<br><br>
+<footer>
+    <div class = "container">
+        <ul type = "none">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Our Story</li></a>
+            <a href="#"><li>Production Process</li></a>
+            <a href="#"><li>Products</li></a>
+        </ul>
+    </div>
+
+    <div class = "container">
+        <ul type = "none">
+            <a href="#"><li>Gallery</li></a>
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Contact US</li></a>
+        </ul>
+    </div>
+
+    <div class = "container">
+        <a href = ""#><i class="fa fa-twitter fa-lg"></i></a>
+        <a href = ""#><i class="fa fa-facebook fa-lg"></i></a>
+        <a href = ""#><i class="fa fa-instagram fa-lg"></i></a>
+        <a href = ""#><i class="fa fa-envelope-square fa-lg"></i></a>
+    </div>
+    <br>
+ </footer>
+ <div id = "copyright">
+ <p class = "copyright">© Copyright 2021 Uruwala Group </p>
+ </div>
+
+ <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("background_img");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images1/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./story.html">OUR STORY</a></li>
+                    <li><a href="./team.html">OUR TEAM</a></li>
+                    <li><a href="./process.html">PROCESS</a></li>
+                    <li><a href="./products.html">PRODUCTS</a></li>
+                    <li><a href="./contactus.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <img class="background_img" src="./images1/factory.jpg" style="width:100%">
+        <img class="background_img" src="./images1/homepage1.jpg" style="width:100%">
+        <img class="background_img" src="./images1/background3.jpg" style="width:100%">
+        <div class="text-box_index">
+            <h1>Uruwala Tea Factory</h1>
+            <p>Welcome</p>
+        </div>
+    </section>
+
+    <!-----Our Story------>
+
+    <section class="index_story">
+        <h3>OUR</h3>
+        <h1><span>STORY</span></h1><br>
+        <p>Hello Kohomathe, Hodaithe, harithe, hadsd</p>
+    </section>
+
+    <section class="teas">
+        <h3>OUR</h3>
+        <h1><span>TEAS</span></h1><br>
+
+        <div class="grid-container">
+            <div class="item"><img src="images1/tea-sample.png" alt="tea sample"><br>BOPA</div>
+            <div class="item"><img src="images1/tea-sample.png" alt="tea sample"><br>BOPF</div>
+            <div class="item"><img src="images1/tea-sample.png" alt="tea sample"><br>FBOP</div>
+            <div class="item"><img src="images1/tea-sample.png" alt="tea sample"><br>BLAH</div>
+        </div>
+
+        <table>
+            <tr>
+                <td><img src="images1/tea-details.jpg"></td>
+                <td>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                        interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl
+                        est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+                        Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus
+                        interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim
+                        ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus
+                        gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+                        porta. Cras ac leo purus. Mauris quis diam velit.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="certification">
+        <h3>OUR</h3>
+        <h1><span>CERTIFICATIONS</span></h1><br>
+
+        <table style="width: 100%">
+            <tr>
+                <td><img src="images1/ceylon-tea-new.png" alt="ceylon-tean-symbol"></td>
+                <td><img src="images1/HACCP_2.jpg" alt="HACCP System Certified"></td>
+                <td><img src="images1/SLSI.jpg" alt="SLSI SLSI-ISO-22000"></td>
+            </tr>
+        </table>
+
+    </section><br>
+
+    <footer>
+        <div class="container">
+            <ul type="none">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="./story.html">
+                    <li>Our Story</li>
+                </a>
+                <a href="./process.html">
+                    <li>Production Process</li>
+                </a>
+                <a href="#">
+                    <li>Products</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="container">
+            <ul type="none">
+                <a href="#">
+                    <li>Gallery</li>
+                </a>
+                <a href="#">
+                    <li>Blog</li>
+                </a>
+                <a href="#">
+                    <li>Contact US</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="container">
+            <a href="" #><i class="fa fa-twitter fa-lg"></i></a>
+            <a href="" #><i class="fa fa-facebook fa-lg"></i></a>
+            <a href="" #><i class="fa fa-instagram fa-lg"></i></a>
+            <a href="" #><i class="fa fa-envelope-square fa-lg"></i></a>
+        </div>
+        <br>
+    </footer>
+    <div id="copyright">
+        <p class="copyright">© Copyright 2021 Uruwala Group </p>
+    </div>
+
+    <!------JavaScript-------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("background_img");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2500); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
