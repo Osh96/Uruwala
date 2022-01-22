@@ -172,12 +172,18 @@ nav .fa{
     width:400px;
     height: 400px;
 }
-
+/*
 .teas table td:last-child{
     background-color: #ff9933;
     padding: 50px;
     font-size: 24px;
     color: #fff;
+}*/
+
+.teas .gridPic{
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
 }
 
 .certification{
