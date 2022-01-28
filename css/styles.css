@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
 }
 
 .header{
@@ -17,6 +17,9 @@
     background: -o-linear-gradient(top, rgba(4,9,30,0.7),rgba(4,9,30,0.7) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, rgba(4,9,30,0.7),rgba(4,9,30,0.7) 100%); /* IE10+ */
     background: linear-gradient(to bottom, rgba(4,9,30,0.7),rgba(4,9,30,0.7) 100%); /* W3C */
+}
+.header h1{
+    font-family: 'Playfair Display', serif;
 }
 
 .background_img{ /*background image on the header*/
@@ -35,7 +38,7 @@ nav{
 }
 
 nav img{
-    width: 150px;
+    width: 100px;
 }
 
 .nav-links{
@@ -51,9 +54,10 @@ nav img{
 }
 
 .nav-links ul li a{
+    font-family: 'Gill Sans Bold';
+    font-size: 18px;
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
 }
 
 .nav-links ul li::after{
@@ -111,12 +115,15 @@ nav .fa{
 }
 
 .index_story h1 span{
+    font-family: 'Hahmlet', serif;
     background:#fff; 
     padding:0px 10px; 
+    font-size: 50px;
 }
 
 .index_story h3{
-    font-size: 36px;
+    font-family: 'Hahmlet', serif;
+    font-size: 30px;
 }
 
 .index_story p{
@@ -141,12 +148,16 @@ nav .fa{
 }
 
 .teas h1 span{
+    font-family: 'Hahmlet', serif;
     background:#fff; 
     padding:0px 10px; 
+    font-size: 50px;
 }
 
 .teas h3{
-    font-size: 36px;
+    font-family: 'Hahmlet', serif;
+    font-size: 30px;
+    
 }
 
 .grid-container {
@@ -204,12 +215,15 @@ nav .fa{
 }
 
 .certification h1 span{
+    font-family: 'Hahmlet', serif;
+    font-size: 50px;
     background:#fff; 
     padding:0px 10px; 
 }
 
 .certification h3{
-    font-size: 36px;
+    font-family: 'Hahmlet', serif;
+    font-size: 30px;
 }
 
 .certification table{
@@ -410,12 +424,15 @@ footer .container{
     float: left;
     width: 25%;
     font-size: 24px;
+    font-family: 'Puritan', sans-serif;
+    
 }
 
 footer .container a{
     text-decoration: none;
     color: #fff;
 }
+
 footer .container {
     margin: 20px 10px;
 }
@@ -429,8 +446,10 @@ footer .container i:hover{
 }
 
 .copyright{
+    font-family: 'Puritan', sans-serif;
+    font-size: 18px;
     text-align: center;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 }
 
 @media(max-width: 700px){
