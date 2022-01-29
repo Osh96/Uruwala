@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <section class = "header">
+    <section class="header">
         <nav>
-            <a href="index.html"><img src = "images1/logo.png"></a>
-            <div class="nav-links" id= "navLinks">
+            <a href="index.html"><img src="images1/logo.png"></a>
+            <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href= "./story.html">OUR STORY</a></li>
-                    <li><a href= "./team.html">OUR TEAM</a></li>
-                    <li><a href= "./process.html">PROCESS</a></li>
+                    <li><a href="./story.html">OUR STORY</a></li>
+                    <li><a href="./team.html">OUR TEAM</a></li>
+                    <li><a href="./process.html">PROCESS</a></li>
                     <li><a href="./products.html">PRODUCTS</a></li>
                     <li><a href="./contactus.html">CONTACT US</a></li>
                 </ul>
@@ -27,38 +32,41 @@
         <img class="background_img" src="./images1/factory.jpg" style="width:100%">
         <img class="background_img" src="./images1/homepage1.jpg" style="width:100%">
         <img class="background_img" src="./images1/background3.jpg" style="width:100%">
-    <div class="text-box_story">
-        <p>Our</p>
-        <p>Team</p>
-    </div>
- </section>
+        <div class="text-box_story">
+            <p>Our</p>
+            <p>Team</p>
+        </div>
+    </section>
 
- <div class = "story">
-    <img class = "story1" src = "">
-    <h1>CHAIRMAN'S MESSAGE</h1>
-    <p class = "description">Rain, rain, go away
-       Come again another day
-       Daddy wants to play
-       Rain, rain go away
-       Rain, rain, go away
-       Come again another day
-       Mommy wants to play
-       Rain, rain, go away
-       Rain, rain, go away
-       Come again another day
-       Brother wants to play
-       Rain, rain, go away
-       Rain, rain, go away
-       Come again another day
-       Sister wants to play
-       Rain, rain, go away
-       Rain, Rain, go away
-       Come again another day
-       All the family wants to play
-       Rain, rain, go away</p>
+    <div class="team">
+        <img class="chairmen" src="images1/Chairman.jpg">
+        <h1>CHAIRMAN'S MESSAGE</h1>
+        <p class="description">Vivamus non molestie elit. Cras bibendum varius interdum. Aenean vestibulum nunc tortor,
+            eget dictum sapien tempus ornare. Pellentesque et rhoncus ligula. Nunc elementum lorem eget pulvinar
+            imperdiet. Donec sagittis massa ac neque ullamcorper consectetur gravida id odio. Pellentesque rutrum, arcu
+            quis eleifend scelerisque, quam massa blandit lorem, quis ullamcorper magna ante nec turpis. Suspendisse at
+            magna luctus metus accumsan malesuada a nec mi. Aliquam tortor tortor, pharetra et leo ac, aliquam
+            sollicitudin enim. Nam pellentesque nisi in tempor accumsan.</p>
     </div>
 
-    <div class = "director"></div>
+
+    <div class="text-box_director">
+        <h1>Board of Directors</h1>
+    </div>
+    </section>
+
+    <section id="director-list">
+
+        <div id="director-list-card">
+            <img src="/images1/DCIM 10- BOPF Ex sp 10.jpg" alt="">
+            <img src="/images1/DCIM 10- BOPF Ex sp 10.jpg" alt="">
+            <img src="/images1/DCIM 10- BOPF Ex sp 10.jpg" alt="">
+            <img src="/images1/DCIM 10- BOPF Ex sp 10.jpg" alt="">
+            <img src="/images1/DCIM 10- BOPF Ex sp 10.jpg" alt="">
+            <img src="/images1/DCIM 10- BOPF Ex sp 10.jpg" alt="">
+        </div>
+
+    </section>
 
 
 
@@ -100,31 +108,6 @@
         <p class="copyright">© Copyright 2021 Uruwala Group </p>
     </div>
 
- <script>
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-    var i;
-    var x = document.getElementsByClassName("background_img");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2500); // Change image every 2 seconds
-}
-</script>
 </body>
+
 </html>
