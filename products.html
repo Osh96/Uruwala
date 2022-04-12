@@ -8,9 +8,19 @@
     <title>Welcome</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Puritan&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+
+    </head>
 
 <body>
     <section class="header">
@@ -36,23 +46,24 @@
 
     <section id="product-list">
 
-            <div id="product-list-card">
-            </div>
+        <div id="product-list-card">
+        </div>
+        
     </section>
 
     <footer>
         <div class="container">
             <ul type="none">
-                <a href="#">
+                <a href="./index.html">
                     <li>Home</li>
                 </a>
-                <a href="#">
+                <a href="./story.html">
                     <li>Our Story</li>
                 </a>
-                <a href="#">
+                <a href="./process.html">
                     <li>Production Process</li>
                 </a>
-                <a href="#">
+                <a href="./products.html">
                     <li>Products</li>
                 </a>
             </ul>
@@ -60,14 +71,8 @@
 
         <div class="container">
             <ul type="none">
-                <a href="#">
-                    <li>Gallery</li>
-                </a>
-                <a href="#">
-                    <li>Blog</li>
-                </a>
-                <a href="#">
-                    <li>Contact US</li>
+                <a href="./contactus.html">
+                    <li>Contact Us</li>
                 </a>
             </ul>
         </div>
@@ -83,13 +88,15 @@
     <div id="copyright">
         <p class="copyright">© Copyright 2021 Uruwala Group </p>
     </div>
+
+    <script>
+        const products = [{image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'},{image: './images1/DCIM 10- BOPF Ex sp 10.jpg'},{image: './images1/DCIM 10- BOPF Ex sp 10.jpg'},]
+        for (const product of products){
+            document.getElementById("product-list-card").innerHTML += '<img src ="' + product.image + '" style="width: 15%; padding: 3% 2%; flex: 1 0 21%; margin: 5px;">';
+        }
+        console.log(products);
+    </script>
+
 </body>
 
-<script>
-    const products = [{image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'}, {image: './images1/DCIM 10- BOPF Ex sp 10.jpg'},]
-    for (const product of products){
-        document.getElementById("product-list-card").innerHTML += '<img src ="' + product.image + '" style="width: 15%; padding: 3% 2%; flex: 1 0 21%; margin: 5px;">';
-	}
-    console.log(products);
-</script>
 </html>
