@@ -236,14 +236,20 @@ nav .fa{
   }
 .story1{
     float: right;
-    padding: 60px;
+    padding: 15px;
     width: 40%;
 }
 
-.story2{
-    float: left;
-    width: 40%;
-    padding: 45px;
+.wanigasekara{
+    width: 60%;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.charles{
+    width: 60%;
+    border-radius: 50%;
+    padding: 15px;
 }
 
 .description{
@@ -253,6 +259,13 @@ nav .fa{
     background-color: #fff;
 }
 
+.lily{
+    font-size: 26px;
+    text-align: justify;
+    padding: 50px;
+    background-color: #fff;
+}
+/* 
 .storydescription{
     float: right;
     font-size: 26px;
@@ -260,7 +273,7 @@ nav .fa{
     width: 50%;
     padding: 30px;
     background-color: #fff;
-}
+} */
 
 .vision img{
     width: 75%;
